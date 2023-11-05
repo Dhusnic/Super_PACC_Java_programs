@@ -24,8 +24,10 @@ public class decending_numbers_till_1 {
 
     public static void main(String[] args) {
         int n;
-        Scanner inp = new Scanner(System.in);
-        n = inp.nextInt();
+        try (Scanner inp = new Scanner(System.in)) {
+            n = inp.nextInt();
+        }
+        System.out.println("---------------------------");
         decen(n);
         System.out.println("---------------------------");
         accen(n);

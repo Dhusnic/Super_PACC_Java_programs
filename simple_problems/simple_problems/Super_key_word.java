@@ -1,3 +1,5 @@
+package simple_problems;
+
 public class Super_key_word {
     public static void main(String[] args) {
         Dog myDog = new Dog("Buddy", "Golden Retriever");
@@ -5,8 +7,6 @@ public class Super_key_word {
         myDog.makeSound();
     }
 }
-
-
 
 class Animal {
     String name;
@@ -38,5 +38,3 @@ class Dog extends Animal {
         System.out.println("Breed: " + this.breed);
     }
 }
-
-

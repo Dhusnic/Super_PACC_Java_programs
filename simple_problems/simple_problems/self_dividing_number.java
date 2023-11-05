@@ -1,3 +1,5 @@
+package simple_problems;
+
 import java.util.*;
 
 public class self_dividing_number {
