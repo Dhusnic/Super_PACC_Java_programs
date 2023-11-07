@@ -1,4 +1,4 @@
-package Dynamic_programing_in_java;
+package Dynamic_Programing_in_java;
 
 import java.util.*;
 
