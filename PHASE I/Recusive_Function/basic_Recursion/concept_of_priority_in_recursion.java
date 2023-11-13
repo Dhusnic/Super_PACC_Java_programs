@@ -1,4 +1,3 @@
-package Recusive_Function;
 
 public class concept_of_priority_in_recursion {
     static void fun(int n) {

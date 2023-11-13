@@ -1,4 +1,3 @@
-package Recusive_Function;
 
 import java.util.Scanner;
 

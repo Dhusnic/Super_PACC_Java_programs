@@ -1,4 +1,3 @@
-package Recusive_Function;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -11,18 +10,15 @@ public class Permutation_Recurcive_function {
     }
 
     private static void generatePermutations(int[] nums, int index, List<List<Integer>> result) {
-        if (index == nums.length) 
-        {
-            // If we've reached the end of the array, add the current permutation to the result.
+        if (index == nums.length) {
+            // If we've reached the end of the array, add the current permutation to the
+            // result.
             List<Integer> permutation = new ArrayList<>();
-            for (int num : nums) 
-            {
+            for (int num : nums) {
                 permutation.add(num);
             }
             result.add(permutation);
-        }  
-        else 
-        {
+        } else {
             for (int i = index; i < nums.length; i++) {
                 // Swap the current element with the element at the current index.
                 swap(nums, index, i);
@@ -43,23 +39,23 @@ public class Permutation_Recurcive_function {
     public static void main(String[] args) {
         try (Scanner inp = new Scanner(System.in)) {
             System.out.print("ENTER THE SIZE OF THE ARRAY :   ");
-            int n=inp.nextInt();
+            int n = inp.nextInt();
             System.out.print("ENTER THE ELEMENTS OF THE ARRAY : ");
             int[] nums = new int[n];
             for (int i = 0; i < n; i++) {
-                nums[i]=inp.nextInt();
+                nums[i] = inp.nextInt();
             }
             List<List<Integer>> permutations = permute(nums);
 
             System.out.print("Permutations of [");
             for (int i = 0; i < n; i++) {
-                System.out.print(nums[i]+""+","+"");
+                System.out.print(nums[i] + "" + "," + "");
             }
             System.out.println("]");
             for (List<Integer> permutation : permutations) {
                 System.out.println(permutation);
             }
-            //System.out.println(permutations);
+            // System.out.println(permutations);
         }
     }
 }
